@@ -85,7 +85,7 @@ if __name__ == "__main__":
     parser.add_argument("database_path", help="Path to the database file")
     parser.add_argument("-p", "--prompt", help="Text prompt for OpenAI chat completion API")
     parser.add_argument("-e", "--execute-query", help="SQL query to execute on the database")
-    parser.add_argument("-er", "--execute-response", action="store_true", default=None, help="execute the SQL query provided by the llm")
+    parser.add_argument("-er", "--execute-response", default=None, help="execute the SQL query provided by the llm")
 
     args = parser.parse_args()
 
